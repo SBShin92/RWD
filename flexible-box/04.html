@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            display: flex;
+            flex-flow: row wrap;
+            width: 90%;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            order: 1;
+            justify-content: flex-end;
+            position: relative;
+            width: 100%;
+        }
+        .header h1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 12.5%;
+            height: 142px;
+            background: #ff6b57;
+        }
+        .header nav {
+            width: 87.5%;
+            min-height: 80px;
+            background-color: blue;
+        }
+        .slider_section {
+            width: 50%;
+            height: 440px;
+            order: 1;
+            background-color: #3c90be;
+        }
+        .gallery_section {
+            width: 27%;
+            order: 2;
+            background-color: #f8de73;
+        }
+        .banner_section {
+            width: 23%;
+            order: 3;
+            background-color: #00d2a5;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            <h1>헤드</h1>
+            <nav>네비</nav>
+        </header>
+        <section class="slider_section"></section>
+        <section class="gallery_section"></section>
+        <section class="banner_section">
+            <div class="banner box 01"></div>
+            <div class="banner box 02"></div>
+        </section>
+        <section class="social_section"></section>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>

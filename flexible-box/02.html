@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrap {
+             /* 사파리 진영(웹 키트 계열) 전용 접두사 */
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            width: 90%;
+            height: 500px;
+            margin: 0 auto;
+            border: 4px solid #000;
+        }
+        #wrap div {
+            width: 100%;
+            height: 200px;
+        }
+        #wrap div:nth-child(2) {
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div style="background: red; order: 3"></div>
+        <div style="background: green; order: 0;"></div>
+        <div style="background: blue; order: 0;"></div>
+    </div>
+</body>
+</html>

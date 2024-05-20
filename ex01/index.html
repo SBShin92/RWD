@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <title>FLAT DESIGN</title>
+    <style>
+      #wrap {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1200px;
+      }
+
+      #wrap section {
+        box-sizing: border-box;
+      }
+
+      @media all and (min-width: 768px) {
+        #wrap {
+          flex-flow: row wrap;
+        }
+      }
+      @media all and (min-width: 960px) {
+        #wrap {
+          position: relative;
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header class="header">
+        <selction class="info_section">
+          <ul class="info_list">
+            <li><a href="index.html"><img src="_blank" alt="ddd"></a></li>
+          </ul>
+        </selction>
+          <h1></h1>
+          <nav></nav>
+      </header>
+      <section class="slider_section"></section>
+      <section class="gallery_section"></section>
+      <section class="banner_section">
+          <div class="banner box 01"></div>
+          <div class="banner box 02"></div>
+      </section>
+      <section class="social_section"></section>
+      <footer class="footer"></footer>
+  </div>
+  </body>
+</html>
